@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href=".//images/kaka.png">
+ 	  <TITLE>CONTACT FORM</TITLE>
+    </HEAD>
+
+   <BODY>
+ 	<a href="creator.html"><img src=".//images/arr.png" height="50px" style="padding: 10px"></a>
+ 	
+ 	<div class="wrapper">
+       
+       <div class="contact-form">
+         
+         <div class="input-fields">
+    			
+    			<input class="input" placeholder="NAME" TYPE="text" /><br>
+ 				
+ 				  <input class="input" placeholder="EMAIL" TYPE="email" /><br>
+ 				
+ 				  <input class="input" placeholder="PASSWORD" TYPE="password"/><br>
+
+        </div>  
+
+          <div class="msg">  
+            <TEXTAREA NAME="message" PLACEHOLDER="Type a message."></TEXTAREA>
+            <div class="btn" onclick="alert('Message Successfully Sent.')"><a href="home.html" style="text-decoration: none;">Submit</a></div>
+
+         </div>
+       </div>
+    </div>
+  </BODY>
+
+<style>
+  
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+body {
+  background-image: url(.//images/ay.gif);
+  background-position: cover;
+  background-size: 101rem;
+}
+h1 {
+   color: #C2DFFF;
+    text-align: center;
+    font-size: 100px;
+    padding-bottom: 150px;
+}
+.container {
+    background-color: #EE9A4D;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1 {
+    border:5px;
+    border-radius: 5px;
+    background-color: #E5E4E2;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+}
+.p2 {
+    border:5px;
+    border-radius: 5px;
+    background-color: #E5E4E2;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+}
+.wrapper {
+  position: absolute;
+  position: fixed;
+  align-items: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width:100%;
+  padding: 0 20px;
+}
+.contact-form {
+  max-width: 550px;
+  margin:0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px;
+}
+.input-fields {
+  display:flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-field, 
+.msg {
+  width: 48%;
+}
+.input-fields .input, 
+.msg textarea {
+  margin:10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid#c5ecfd;
+  padding:10px;
+  color:#c5ecfd;
+}
+.msg textarea {
+  height: 212px;
+
+}
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+::-moz-input-placeholder {
+  color:#c5ecfd;
+}
+::-ms-input-placeholder {
+  color:#c5ecfd;
+}
+.btn {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color:#ffff;
+  cursor:pointer;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px){
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-field, 
+  .msg {
+    width:100%;
+  }
+}
+
+</style>
+
+
+</html>
